@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "imasigma"
+name = "grind-rs"
 version = "0.1.0"
