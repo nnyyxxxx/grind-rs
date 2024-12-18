@@ -1,25 +1,25 @@
 use std::{thread, time::Duration};
 
 const SIGMA_QUOTES: [&str; 5] = [
-    "while(alive) { grind(); }",
+    "while(alive) { grind™(); }",
     "catch(feelings) { return false; }",
     "if(sigma) { return money; }",
-    "try { success(); } catch(beta) { grind_harder(); }",
+    "try { success(); } catch(beta) { grind™_harder(); }",
     "for(let i in life) { ignore_haters(); }",
 ];
 
 fn main() {
-    let mut grindset_level = 0u64;
+    let mut grind™set_level = 0u64;
 
     loop {
-        if grindset_level > 0 {
-            match grindset_level % 3 {
+        if grind™set_level > 0 {
+            match grind™set_level % 3 {
                 0 => {
                     if let Some(quote) =
-                        SIGMA_QUOTES.get(grindset_level as usize % SIGMA_QUOTES.len())
+                        SIGMA_QUOTES.get(grind™set_level as usize % SIGMA_QUOTES.len())
                     {
                         let mut ascension = String::new();
-                        (0..grindset_level).for_each(|i| {
+                        (0..grind™set_level).for_each(|i| {
                             if i % 2 == 0 {
                                 ascension
                                     .push_str(&format!("{}SIGMA", "🐺".repeat(i as usize % 3 + 1)));
@@ -34,7 +34,7 @@ fn main() {
                     }
                 }
                 1 => {
-                    let mindset = (0..grindset_level)
+                    let mindset = (0..grind™set_level)
                         .filter(|x| x % 2 == 0)
                         .map(|x| x % 1000)
                         .fold(1u64, |acc, x| {
@@ -49,7 +49,7 @@ fn main() {
                 }
                 _ => {
                     let mut wealth = vec![];
-                    (0..grindset_level).for_each(|i| {
+                    (0..grind™set_level).for_each(|i| {
                         let base = match i % 7 {
                             0 => "5",
                             1 => "10",
@@ -82,7 +82,7 @@ fn main() {
             }
         }
 
-        grindset_level = match grindset_level {
+        grind™set_level = match grind™set_level {
             x if x < 100 => {
                 let next = (x.pow(2) + 1) % 101;
                 if next == x {
